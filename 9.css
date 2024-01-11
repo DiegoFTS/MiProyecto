@@ -1,0 +1,157 @@
+.animated-section {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .box {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 3, 50);
+    box-shadow: 0 0 1px aqua, 0 0 10px aqua, 0 0 25px aqua;
+}
+
+        /* Define the animations */
+        @keyframes slide-in {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Apply the animations to the section and h1 elements */
+        section {
+            animation: slide-in 1s ease-in-out;
+        }
+
+        h1 {
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        section{
+            height: 100%;
+            width: 100%;
+        }
+
+        h1{
+            color: aliceblue;
+            text-shadow: 0 0 1px aqua, 0 0 10px aqua, 0 0 25px aqua;
+        }
+
+              /* Define the animation */
+              @keyframes linkAnimation {
+                0% { color: blue; }
+                50% { color: aqua; }
+                100% { color: blue; }
+            }
+    
+            /* Apply the animation to the links */
+            a {
+                animation: linkAnimation 2s infinite;
+            }
+
+            .animated-border {
+                position: relative;
+                display: inline-block;
+                padding: 10px;
+                border: 2px solid transparent;
+                animation: border-animation 2s infinite;
+              }
+            
+              @keyframes border-animation {
+                0% {
+                  border-color: transparent;
+                  box-shadow: none;
+                }
+                25% {
+                  border-color: red;
+                  box-shadow: 0 0 10px red;
+                }
+                50% {
+                  border-color: green;
+                  box-shadow: 0 0 10px green;
+                }
+                75% {
+                  border-color: blue;
+                  box-shadow: 0 0 10px blue;
+                }
+                100% {
+                  border-color: transparent;
+                  box-shadow: none;
+                }
+              }
+            
+              h1{
+                color: aliceblue;
+                text-shadow: ;
+                text-shadow: 0 0 1px aqua, 0 0 10px aqua, 0 0 25px aqua;
+               
+              }
+            
+            h2{
+                color: beige;
+                text-shadow: 0 0 1px aqua, 0 0 10px aqua, 0 0 25px aqua;
+                box-shadow: 0 0 1px aqua, 0 0 10px aqua, 0 0 25px aqua;
+                border-radius: 100%;
+                height: 30%;
+            }
+            
+              h3{
+                color: aliceblue;
+              }
+            
+              .image-container {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .image-container::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                animation: changeColor 3s infinite;
+            }
+            
+            @keyframes changeColor {
+                0% { border-color: red; }
+                25% { border-color: blue; }
+                50% { border-color: green; }
+                75% { border-color: yellow; }
+                100% { border-color: purple; }
+            }
+            
+            .animated-button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+              }
+            
+              .animated-button:hover {
+                background-color: #008CBA;
+                color: white;
+              }
